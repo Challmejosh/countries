@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   fetch('data.json')
     .then(res => res.json())
     .then(data => {
-      countries = data.slice(0, 8);
+      countries = data;
       filteredCountries = countries;
       renderCountries(filteredCountries);
       populateRegions(countries);
